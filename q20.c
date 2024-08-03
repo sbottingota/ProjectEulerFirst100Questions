@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdbool.h>
 #include <gmp.h>
 
@@ -21,6 +22,8 @@ int main() {
     for (char *c = str; *c != '\0'; ++c) {
         sum += *c - '0';
     }
+
+    free(str);
 
     printf("%d\n", sum);
 }
