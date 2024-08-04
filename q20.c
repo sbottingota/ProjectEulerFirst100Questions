@@ -1,3 +1,5 @@
+// N.B. program requires gmp to be linked seperately.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
