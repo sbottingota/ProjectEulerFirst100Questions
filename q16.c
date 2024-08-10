@@ -1,4 +1,4 @@
-// N.B. this requires gmp to be installed and linked
+// N.B. program requires gmp to be compiled manually with gmp linked.
 
 #include <stdio.h>
 #include <stdlib.h>
