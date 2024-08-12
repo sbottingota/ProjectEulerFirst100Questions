@@ -1,5 +1,3 @@
-// N.B. program requires gmp to be compiled manually with gmp linked.
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

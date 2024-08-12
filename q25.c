@@ -1,5 +1,3 @@
-// N.B. program requires gmp to be compiled manually with gmp linked.
-
 #include <stdio.h>
 #include <gmp.h>
 
@@ -23,6 +21,10 @@ int main() {
         
         ++i;
     } while (mpz_sizeinbase(c, 10) < N_DIGITS);
+
+    mpz_clear(a);
+    mpz_clear(b);
+    mpz_clear(c);
 
     printf("%d\n", i);
 }
