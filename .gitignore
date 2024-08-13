@@ -3,4 +3,11 @@
 !/**/
 !*.*
 
+# exclude test files
+test*
+
+# exclude profiler files
+gmon.out
+
+# unexclude makefile
 !Makefile
