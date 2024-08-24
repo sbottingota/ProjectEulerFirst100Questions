@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define FILE_PATH "q22.txt"
+#define FILE_PATH "q0022.txt"
 #define BUF_SIZE 50000
 
 struct NameNode {

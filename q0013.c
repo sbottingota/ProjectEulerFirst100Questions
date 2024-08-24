@@ -3,7 +3,7 @@
 #include <string.h>
 #include <math.h>
 
-#define FILE_PATH "./q13.txt"
+#define FILE_PATH "./q0013.txt"
 #define READ_LENGTH 52 // 50 chars, plus "\n\0"
 #define N_DIGITS 10
 #define PRECISION 12
