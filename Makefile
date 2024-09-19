@@ -14,6 +14,9 @@ clean:
 		fi; \
 	done; \
 
+%: %.rs
+	rustc $@.rs
+
 %: %.c
 	if grep -q 'gmp.h' $@.c; then \
 		$(CC) $(CFLAGS) $@.c -o $@ $(LDLIBS) -lgmp; \
