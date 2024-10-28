@@ -3,6 +3,7 @@ CFLAGS=-Wall -Wextra -Wpedantic -O
 LDLIBS=-lm
 # RUSTC=rustc
 RUSTC=clippy-driver --rustc
+RUSTFLAGS=-C opt-level=3
 
 all:
 	for file in $$(ls *.c); do \
@@ -17,7 +18,7 @@ clean:
 	done; \
 
 %: %.rs
-	$(RUSTC) $@.rs
+	$(RUSTC) $(RUSTFLAGS) $@.rs
 
 %: %.c
 	if grep -q 'gmp.h' $@.c; then \
