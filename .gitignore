@@ -4,10 +4,25 @@
 !*.*
 
 # exclude test files
-test*
+[Tt]est*
 
 # exclude profiler files
 gmon.out
+perf.data
+perf.data.old
+*.svg
 
 # unexclude makefile
 !Makefile
+
+
+# Added by cargo
+
+/target
+
+
+# Added by cargo
+#
+# already existing elements were commented out
+
+#/target
